@@ -13,6 +13,7 @@
 
 #### URL : /register/
 #### Method : POST
+#### Usage : To register a new user
 #### Request Body:
 ```
 {
@@ -26,18 +27,7 @@
 
 #### URL : /login
 #### Method : POST
-#### Request Body:
-```
-{
-  "email": "string",
-  "password": "string"
-}
-```
-
------------------------------------------------------------------------------------------------------
-
-#### URL : /login
-#### Method : POST
+#### Usage : To sign in a existing user
 #### Request Body:
 ```
 {
@@ -50,6 +40,7 @@
 
 #### URL : /addbooks
 #### Method : POST
+#### Usage : To add books to the books list
 #### Request Body:
 ```
 file_upload [ string($binary) ]
@@ -66,6 +57,7 @@ description [ string ]
 
 #### URL : /userbooks/{email}
 #### Method : GET
+#### Usage : To get books uploaded by a single user via their email
 #### Request Body:
 ```
 email [ string ]
@@ -75,11 +67,13 @@ email [ string ]
 
 #### URL : /allbooks
 #### Method : GET
+#### Usage : To get all the books uploaded to the book bridge website
 
 -----------------------------------------------------------------------------------------------------
 
 #### URL : /allbooks/{id}
 #### Method : GET
+#### Usage : To get a single book info via their book id
 
 ```
 id [ integer ]
@@ -89,6 +83,7 @@ id [ integer ]
 
 #### URL : /send_message
 #### Method : POST
+#### Usage : To send a message to the respective book owners
 #### Request Body:
 ```
 {
@@ -102,6 +97,7 @@ id [ integer ]
 
 #### URL : /chat_history/{sender_email}/{receiver_email}
 #### Method : GET
+#### Usage : To get the chat history between two emails
 
 ```
 sender_email [ string ]
@@ -112,7 +108,7 @@ receiver_email [ string ]
 
 #### URL : /chat_emails/{email}
 #### Method : GET
-
+#### Usage : To get the users a person have chatted with
 ```
 email [ string ]
 ```
