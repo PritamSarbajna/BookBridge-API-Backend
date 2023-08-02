@@ -103,7 +103,7 @@ async def add_books(
     img = img.resize(size = (200, 200))
     img.save(generated_name)
     
-    file_url = "localhost:8000" + generated_name[1:]
+    file_url = "book-bridge-api-backend-fhz3.vercel.app" + generated_name[1:]
         
     db_user = UserDashBoard(email=email, 
                             book=book, 
